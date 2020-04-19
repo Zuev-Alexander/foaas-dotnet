@@ -28,7 +28,7 @@ namespace Foaas.Client
         Task<FoaasResponse> Deraadt(string name, string from);
         Task<FoaasResponse> Diabetes(string from);
         Task<FoaasResponse> Donut(string name, string from);
-        Task<FoaasResponse> Donut(string @do, string something, string from);
+        Task<FoaasResponse> DoSomething(string @do, string something, string from);
         Task<FoaasResponse> Equity(string name, string from);
         Task<FoaasResponse> Even(string from);
         Task<FoaasResponse> Everyone(string from);
@@ -39,7 +39,7 @@ namespace Foaas.Client
         Task<FoaasResponse> Field(string name, string from, string reference);
         Task<FoaasResponse> Flying(string from);
         Task<FoaasResponse> FTFY(string from);
-        Task<FoaasResponse> FTS(string from);
+        Task<FoaasResponse> FTS(string name, string from1);
         Task<FoaasResponse> GFY(string from);
         Task<FoaasResponse> Give(string from);
         Task<FoaasResponse> Greed(string noun, string from);
