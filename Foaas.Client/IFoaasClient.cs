@@ -11,6 +11,7 @@ namespace Foaas.Client
         Task<FoaasResponse> Asshole(string from);
         Task<FoaasResponse> Awesome(string from);
         Task<FoaasResponse> Back(string name, string from);
+        Task<FoaasResponse> Bag(string from);
         Task<FoaasResponse> Ballmer(string name, string company, string from);
         Task<FoaasResponse> Birthday(string name, string from);
         Task<FoaasResponse> Because(string from);
@@ -40,7 +41,7 @@ namespace Foaas.Client
         Task<FoaasResponse> Flying(string from);
         Task<FoaasResponse> FTFY(string from);
         Task<FoaasResponse> FTS(string name, string from1);
-        Task<FoaasResponse> GFY(string from);
+        Task<FoaasResponse> GFY(string name, string from1);
         Task<FoaasResponse> Give(string from);
         Task<FoaasResponse> Greed(string noun, string from);
         Task<FoaasResponse> HolyGrail(string from);
@@ -60,10 +61,10 @@ namespace Foaas.Client
         Task<FoaasResponse> Looking(string from);
         Task<FoaasResponse> Legend(string name, string from);
         Task<FoaasResponse> Madison(string name, string from);
-        Task<FoaasResponse> Maybe(string name, string from);
-        Task<FoaasResponse> Me(string name);
-        Task<FoaasResponse> Mornin(string name);
-        Task<FoaasResponse> No(string name);
+        Task<FoaasResponse> Maybe(string @from);
+        Task<FoaasResponse> Me(string @from);
+        Task<FoaasResponse> Mornin(string @from);
+        Task<FoaasResponse> No(string @from);
         Task<FoaasResponse> Off(string name, string from);
         Task<FoaasResponse> OffWith(string behaviour, string from);
         Task<FoaasResponse> Outside(string name, string from);

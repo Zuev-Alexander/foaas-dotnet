@@ -76,6 +76,11 @@ namespace Foaas.Client
             return await Send("/back", name, from);
         }
 
+        public async Task<FoaasResponse> Bag(string from)
+        {
+            return await Send("/bag", from);
+        }
+
         public async Task<FoaasResponse> Ballmer(string name, string company, string from)
         {
             return await Send("/ballmer", name, company, from);
@@ -88,7 +93,7 @@ namespace Foaas.Client
 
         public async Task<FoaasResponse> Because(string from)
         {
-            return await Send("/anyway", from);
+            return await Send("/because", from);
         }
 
         public async Task<FoaasResponse> Blackadder(string name, string from)
@@ -203,7 +208,7 @@ namespace Foaas.Client
 
         public async Task<FoaasResponse> Field(string name, string from, string reference)
         {
-            return await Send("/field", name, from);
+            return await Send("/field", name, from, reference);
         }
 
         public async Task<FoaasResponse> Flying(string from)
@@ -216,14 +221,14 @@ namespace Foaas.Client
             return await Send("/ftfy", from);
         }
 
-        public async Task<FoaasResponse> FTS(string name, string from1)
+        public async Task<FoaasResponse> FTS(string name, string from)
         {
-            return await Send("/fts", name);
+            return await Send("/fts", name, from);
         }
 
-        public async Task<FoaasResponse> GFY(string name, string from1)
+        public async Task<FoaasResponse> GFY(string name, string from)
         {
-            return await Send("/gfy", name, name);
+            return await Send("/gfy", name, from);
         }
 
         public async Task<FoaasResponse> Give(string from)
